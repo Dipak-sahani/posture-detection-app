@@ -1,12 +1,35 @@
-# React + Vite
+# Posture Detection App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that analyzes posture in real-time using rule-based logic with MediaPipe and OpenCV. Detects bad posture during sitting and squatting activities.
 
-Currently, two official plugins are available:
+![App Screenshot](https://via.placeholder.com/800x400?text=Posture+Detection+App+Screenshot)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Real-time posture analysis** from webcam or video upload
+- **Rule-based detection** for:
+  - Sitting: Neck bending, back hunching
+  - Squatting: Knee-over-toe, squat depth
+- **Visual feedback** with pose landmarks
+- **Cross-platform** (works on Windows, macOS, Linux)
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **Frontend**: React.js
+- **Backend**: Flask (Python)
+- **Computer Vision**: MediaPipe, OpenCV
+- **Deployment**: Docker
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+### Prerequisites
+- Docker
+- Node.js (for frontend development)
+- Python 3.10 (for backend development)
+
+### With Docker (Recommended)
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/posture-detection-app.git
+cd posture-detection-app
+
+# Build and run containers
+docker-compose up --build
