@@ -23,7 +23,7 @@ function App() {
         </label>
       </div>
       
-      <div className="input-methods">
+      <div className="input-methods ">
         <CameraFeed 
           activity={activity} 
           setFeedback={setFeedback} 

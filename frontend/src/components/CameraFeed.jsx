@@ -31,6 +31,7 @@ const CameraFeed = ({ activity, setFeedback, setLoading }) => {
   const ctx = canvas.getContext('2d');
   ctx.drawImage(videoRef.current, 0, 0, canvas.width, canvas.height);
 
+
   // Convert to JPEG (quality 90)
   const blob = await new Promise(resolve => 
     canvas.toBlob(resolve, 'image/jpeg', 0.9)
@@ -58,6 +59,7 @@ const CameraFeed = ({ activity, setFeedback, setLoading }) => {
   }
 };
 
+
   useEffect(() => {
     return () => {
       stopCamera();
@@ -75,12 +77,12 @@ const CameraFeed = ({ activity, setFeedback, setLoading }) => {
           muted 
           style={{ display: isCameraOn ? 'block' : 'none' }}
         />
-        <canvas 
+        {/* <canvas 
           ref={canvasRef} 
           width="640" 
           height="480"
           style={{ display: isCameraOn ? 'block' : 'none' }}
-        />
+        /> */}
         {!isCameraOn && <div className="camera-placeholder">Camera is off</div>}
       </div>
       

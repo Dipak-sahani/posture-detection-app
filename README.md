@@ -2,7 +2,11 @@
 
 A full-stack web application that analyzes posture in real-time using rule-based logic with MediaPipe and OpenCV. Detects bad posture during sitting and squatting activities.
 
-![App Screenshot](https://via.placeholder.com/800x400?text=Posture+Detection+App+Screenshot)
+![App Screenshot](./images/left.png)
+![App Screenshot](./images/right.png)
+![App Screenshot](./images/perfect.png)
+
+
 
 ## Features
 - **Real-time posture analysis** from webcam or video upload
